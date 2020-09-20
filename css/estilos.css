@@ -1,0 +1,855 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+
+
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 350px;
+    background: #403B4A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(238, 61%, 40%, 0.671), hsla(300, 70%, 64%, 0.671)), url(../img/uembkgrnd2.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(238, 61%, 40%, 0.671), hsla(300, 70%, 64%, 0.671)), url(../img/uembkgrnd2.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .textos-header {
+    display: flex;
+    height: 180px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 30px;
+    color: white;
+}
+
+
+.textos-header > a{
+    
+    text-decoration: none;  
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-style: italic;
+    color: snow;
+    text-shadow: 1px 1px 2px black;
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+
+.textos-header > a : hover{
+    
+   
+    color: darkgray;
+    font-size: 80px;
+    
+}
+
+
+.textos-header h3 {
+    font-size: 20px;
+    color: gainsboro;
+    font-weight: 300;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav > a:hover {
+    color: darkslategray;
+    font-weight: 550;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*about us*/
+.descrip {
+    background: #f5edff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.descrip h2 {
+    padding-top: 60px;
+}
+
+.contenedor-sobre-nosotros {
+
+    background: #f5edff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left: ;
+}
+
+.imagen-about-us {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenido-textos {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-content: center;
+}
+
+.contenido-textos h3 {
+    margin-bottom: 15px;
+    margin-left: 5px;
+    align-content: center;
+}
+
+.contenido-textos h3 span {
+    background: purple;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+
+.contenido-textos p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    width: 100%;
+    text-align: justify;
+    text-justify: auto;
+}
+
+/* Videos */
+
+.videos {
+    background: #f5edff;
+}
+
+.galeria-videos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-videos {
+    display: flex;
+    width: auto;
+    margin-bottom: 20px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.9);
+}
+
+.imagen-videos > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: linear-gradient(to right, hsla(297, 58%, 84%, 0.7), hsla(205, 76%, 72%, 0.7));
+    transition: transform .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 50px;
+    border: 0px;
+}
+
+.hover-galeria p {
+    color: black;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.hover-galeria h5 {
+    color: white;
+    margin-bottom: 5%;
+    text-shadow: 1.3px 1.3px black;
+}
+
+.imagen-videos:hover .hover-galeria {
+    transform: scale(1);
+}
+
+/* Ponentes */
+
+.Cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+
+}
+
+.Cards .Card {
+    background: linear-gradient(to right,hsla(278, 93%, 63%, 0.6), hsla(267, 92%, 64%, 1));
+    display: flex;
+    width: 90%;
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.9);
+    margin: 10px;
+}
+
+.Cards .Card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid white;
+    padding-left: 9%;
+    display: block;
+}
+
+.yutub2{
+    width: 170%;
+    height: 45%;
+    padding-bottom: 15%; /* Change this till it fits the dimensions of your video */
+    padding-right: 11%;   
+    position: relative;   
+}
+
+.yutub2 iframe { 
+    border: 4px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.9);
+    top: 10%;
+    width: 132%;
+    height: 83%;
+    max-width: 132%;
+    max-height: 83%;
+    position: absolute;
+    display: block;
+    left: -75%;
+    border: 4px solid white;
+}
+.Cards .Card > .Card-text-content {
+    width: 90%;
+    text-align: right;     
+    color: white;
+    font-size: 30px;
+    margin-right: 60px; 
+    
+    
+}
+
+.Cards .Card > .Card-text-content p {
+    font-weight: 300;
+    font-size: 19px;
+    width: 400px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    max-width: 560px;
+    text-align: justify;
+}
+
+.Cards .Card > .Card-text-content h5 {
+    color: gainsboro;
+    font-size: 16px;
+    padding-top: 1px;
+    padding-bottom: 7px;
+}
+.yutub{
+    width: 140%;
+    height: 0;
+    padding-bottom: 80%; /* Change this till it fits the dimensions of your video */
+    position: relative;
+    
+}
+.yutub iframe { 
+     width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: -70%;
+    left: 12%;
+}
+
+
+.Cards .Card .Card-text-content > .Card-rrss-content {
+    width: 150%;
+    height: 65px;
+    display: flex;
+    margin-top: 4px;
+    justify-content: center;
+}
+
+#cara{
+    width:100%;
+    height: 56,25%;;
+    margin-left: 50px; 
+    margin-right: 50px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.9);
+    display: flex;
+}
+.cara-anim{
+    position: relative;
+    display: inline-block;
+}
+
+.hoverNew{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1);
+    background: linear-gradient(to right, hsla(297, 58%, 84%, 0.7), hsla(205, 76%, 72%, 0.7));
+    transition: transform .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cara-anim:hover .hoverNew{
+    transform: scale(1);
+}
+
+#ico{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border: 0px solid rgba(0, 0, 0, 0);
+    align-content: center;
+    margin-top: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+
+
+.Cards .Card figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.Cards .Card figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* Services */
+
+.about-services {
+    background: white;
+    padding-bottom: 30px;
+}
+
+.servicio-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind {
+    width: 100%;
+    text-align: center;
+}
+
+.servicio-ind > img {
+    width: 90%;
+}
+
+.servicio-ind > h3 {
+    margin: 10px 0;
+}
+
+.servicio-ind p {
+    font-weight: 300;
+    font-size: 8px;
+    text-align: justify;
+}
+
+
+
+/*Footer*/
+
+footer {
+    background: #414141;
+    padding: 60px 0 5px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 0.1px solid grey;
+}
+
+.content-foo {
+    text-align: center;
+
+}
+
+.content-foo > h4 {
+    color: wheat;
+    border-bottom: 2px solid gray;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+.content-foo > p {
+    color: antiquewhite;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 12px;
+    margin: 10px  0 100px;
+    color: #9e9797;
+    padding-bottom: 40px;
+}
+.titulo-finalm {
+     text-align: center;
+    font-size: 12px;
+    margin: 10px 0 0 100px;
+    color: #9e9797;
+    padding-bottom: 40px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+.content-foo2 {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+
+}
+.follow-button {
+    width: 400%;
+    height: 200%;
+}
+
+.logoUEM {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo-info {
+    text-align: left;
+    font-size: 10px;
+    color: #9e9797;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    /* header media */
+    header .textos-header {
+    display: flex;
+    height: 60%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 20px;
+    color: white;
+}
+
+
+.textos-header > a{
+    
+    text-decoration: none;  
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-style: italic;
+    color: snow;
+    text-shadow: 1px 1px 2px black;
+    font-size: 15px;font-weight: 500;
+    
+}
+
+.textos-header > a : hover{
+    
+   
+    color: darkgray;
+    font-size: 80px;
+    
+}
+
+
+.textos-header h3 {
+    font-size: 12px;
+    color: gainsboro;
+    font-weight: 400;
+}
+
+nav {
+    text-align: right;
+    padding: 10px 0 0 0;
+}
+
+nav > a {
+    color: darkslategray;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav > a:hover {
+    color: coral;
+    font-weight: 900;
+}
+
+.wave {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+    
+header {
+        background-position: center;
+}
+
+    
+/* header media */
+    
+    
+    
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor {
+
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .galeria-videos {
+
+        width: 100px;
+        display: table;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imagen-videos {
+        display: flex;
+        width: auto;
+        margin-bottom: 20px;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.9);
+    } 
+
+    .Cards .Card {
+         background: linear-gradient(to right,hsla(278, 93%, 63%, 0.6), hsla(267, 92%, 64%, 1));
+        display: flex;
+        width: 90%;
+        height: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.9);
+        margin: 10px auto auto auto;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .Cards .Card img {
+        width: 0;
+        height: 0;
+        border: 0;
+        border-radius: 0;
+        top: 10px;
+        right: 90px;
+    }
+
+    .yutub2{
+        overflow: hidden;
+        width: 170%;
+        height: 45%;
+        margin-left: -140px;
+        padding-bottom: 40%; /* Change this till it fits the dimensions of your video */
+        padding-right: 50%;   
+        position: relative;   
+        }
+
+    .yutub2 iframe { 
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding-top: 5%;
+        left: 0;
+        border: 0px solid white;
+        }
+
+    .Cards .Card > .Card-text-content {
+        width: 20%;
+        color: white;
+        margin-left: 15px;
+        align-content: center;
+        font-size: 14px;
+    }
+
+
+
+    .Cards .Card > .Card-text-content p {
+        font-weight: 250;
+        font-size: 10px;
+        justify-content: center;
+        width:135%;
+        padding-top: 5px;
+        padding-right: 15px;
+    }
+
+    .Cards .Card > .Card-text-content h5 {
+        color: gainsboro;
+        font-size: 13px;
+        text-align: center;
+        width: 140%;
+        padding-top: 1px;
+        padding-bottom: 7px;
+    }
+    .Cards .Card > .Card-text-content h4 {
+        
+        padding-top:  5px;
+        width: 140%;
+        text-align: center;
+        
+        
+    }
+
+    .Cards .Card .Card-text-content > .Card-rrss-content {
+        width: auto;
+        height: 65px;
+        display: flex;
+        margin-top: 4px;
+    }
+
+    .Cards .Card > .Card-text-content img {
+        width: 12px;
+        height: 12px;
+        display: flex;
+        border: 0px solid rgba(0, 0, 0, 0);
+        align-content: center;
+        margin-top: 4px;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+    .Cards .Card figure img {
+        -webkit-opacity: scale(1);
+        opacity: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .Cards .Card figure:hover img {
+        -webkit-opacity: scale(0.65);
+        opacity: scale(0.65);
+
+
+
+
+
+    }
+    
+    footer {
+    background: #414141;
+    padding: 30px 0 5px;
+    margin: auto;
+    overflow: hidden;
+}
+    
+    .contenedor-footer {
+    display: flex;
+    width: auto;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 50px;
+    border-bottom: 0.1px solid grey;
+}
+    .mail{
+        width: 20%;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+    
+    .content-foo > h4 {
+    color: wheat;
+    border-bottom: 2px solid gray;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+     
+}
+
+.titulo-finalm {
+     text-align: center;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #9e9797;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0 0 0 0 ; 
+}
+    
+
+
+.content-foo2 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+
+}
+
+
+.titulo-final {
+    text-align: center;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+        
+    color: #9e9797;
+    padding-bottom: 40px;
+}
+
+
+.logoUEM > img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo-info {
+    text-align: center;
+    font-size: 6px;
+    color: #9e9797;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
